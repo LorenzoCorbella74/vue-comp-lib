@@ -17,9 +17,9 @@ const ComponentLibrary = {
 
 export default ComponentLibrary
 
-/* if (typeof window !== 'undefined' && window.Vue) {
+if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.use(ComponentLibrary)
-} */
+}
 
 // Funziona ma i componenti sono vuoti come se non leggesse la composition API
 /* export { default as ComponentTest } from './components/ComponentTest'
