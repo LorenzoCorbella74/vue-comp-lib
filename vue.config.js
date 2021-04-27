@@ -1,11 +1,11 @@
-/* module.exports.externals = {
+module.exports.externals = {
     '@vue/composition-api': 'commonjs2 @vue/composition-api'
 }
- */
-module.exports = {
+
+/* module.exports = {
     configureWebpack: {
         externals: {
             "@vue/composition-api": "@vue/composition-api"
         }
     }
-}
+} */

@@ -1,6 +1,6 @@
 {
   "name": "vue-comp-lib",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "main": "./dist/ls-components.common.js",
   "scripts": {
