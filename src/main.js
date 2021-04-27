@@ -1,8 +1,26 @@
-import Vue from 'vue'
-import App from './App.vue'
+import * as components from './components'
 
-Vue.config.productionTip = false
+// import VueCompositionApi from '@vue/composition-api';
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+const ComponentLibrary = {
+  install(Vue/* , options = {} */) {
+
+    // Vue.use(VueCompositionApi)
+    // components
+    for (const componentName in components) {
+      const component = components[componentName]
+
+      Vue.component(component.name, component)
+    }
+  }
+}
+
+export default ComponentLibrary
+
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(ComponentLibrary)
+}
+
+// Funziona ma i componenti sono vuoti come se non leggesse la composition API
+/* export { default as ComponentTest } from './components/ComponentTest'
+export { default as SimpleComponent } from './components/SimpleComponent' */
