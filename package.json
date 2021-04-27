@@ -1,7 +1,7 @@
 {
-  "name": "vue-component-library",
+  "name": "vue-comp-lib",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "./dist/ls-components.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
