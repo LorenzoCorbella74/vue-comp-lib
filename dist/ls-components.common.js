@@ -2734,12 +2734,12 @@ var SimpleComponent_component = normalizeComponent(
 // CONCATENATED MODULE: ./src/components/SimpleComponent/index.js
 
 /* harmony default export */ var components_SimpleComponent = (SimpleComponent);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0c43503a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ClockComponent/ClockComponent.vue?vue&type=template&id=53dbfac9&
-var ClockComponentvue_type_template_id_53dbfac9_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._v(_vm._s(_vm.display))])}
-var ClockComponentvue_type_template_id_53dbfac9_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0c43503a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ClockComponent/ClockComponent.vue?vue&type=template&id=39d0a1cc&
+var ClockComponentvue_type_template_id_39d0a1cc_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._v(_vm._s(_vm.display))])}
+var ClockComponentvue_type_template_id_39d0a1cc_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/ClockComponent/ClockComponent.vue?vue&type=template&id=53dbfac9&
+// CONCATENATED MODULE: ./src/components/ClockComponent/ClockComponent.vue?vue&type=template&id=39d0a1cc&
 
 // EXTERNAL MODULE: external "moment"
 var external_moment_ = __webpack_require__("c32d");
@@ -2753,7 +2753,7 @@ var external_moment_default = /*#__PURE__*/__webpack_require__.n(external_moment
 //
 
 /* harmony default export */ var ClockComponentvue_type_script_lang_js_ = ({
-  name: 'clock-component',
+  name: 'ClockComponent',
   data: function data() {
     return {
       time: Date.now()
@@ -2784,8 +2784,8 @@ var external_moment_default = /*#__PURE__*/__webpack_require__.n(external_moment
 
 var ClockComponent_component = normalizeComponent(
   ClockComponent_ClockComponentvue_type_script_lang_js_,
-  ClockComponentvue_type_template_id_53dbfac9_render,
-  ClockComponentvue_type_template_id_53dbfac9_staticRenderFns,
+  ClockComponentvue_type_template_id_39d0a1cc_render,
+  ClockComponentvue_type_template_id_39d0a1cc_staticRenderFns,
   false,
   null,
   null,
