@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("@vue/composition-api"));
+		module.exports = factory(require("@vue/composition-api"), require("moment"));
 	else if(typeof define === 'function' && define.amd)
-		define(["@vue/composition-api"], factory);
+		define(["@vue/composition-api", "moment"], factory);
 	else if(typeof exports === 'object')
-		exports["ls-components"] = factory(require("@vue/composition-api"));
+		exports["ls-components"] = factory(require("@vue/composition-api"), require("moment"));
 	else
-		root["ls-components"] = factory(root["@vue/composition-api"]);
-})((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__8165__) {
+		root["ls-components"] = factory(root["@vue/composition-api"], root["moment"]);
+})((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__8165__, __WEBPACK_EXTERNAL_MODULE_c32d__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -1956,6 +1956,13 @@ module.exports = function (input, PREFERRED_STRING) {
 
 /***/ }),
 
+/***/ "c32d":
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_c32d__;
+
+/***/ }),
+
 /***/ "c430":
 /***/ (function(module, exports) {
 
@@ -2401,6 +2408,7 @@ var components_namespaceObject = {};
 __webpack_require__.r(components_namespaceObject);
 __webpack_require__.d(components_namespaceObject, "ComponentTest", function() { return components_ComponentTest; });
 __webpack_require__.d(components_namespaceObject, "SimpleComponent", function() { return components_SimpleComponent; });
+__webpack_require__.d(components_namespaceObject, "ClockComponent", function() { return components_ClockComponent; });
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 // This file is imported into lib/wc client bundles.
@@ -2429,7 +2437,7 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
 var es_function_name = __webpack_require__("b0c0");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"477ae07f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ComponentTest/ComponentTest.vue?vue&type=template&id=7278aea8&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0c43503a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ComponentTest/ComponentTest.vue?vue&type=template&id=7278aea8&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"component"},[_c('header',[_vm._t("header",[_c('h3',[_vm._v("Esempio con stile base")])])],2),_c('main',[_vm._t("default",[_c('div',{staticStyle:{"display":"flex","justify-content":"space-between"}},[_c('span',[_vm._v(_vm._s(_vm.obj.number))]),_c('span',[_vm._v(_vm._s(_vm.primitiva))]),_c('span',[_c('button',{staticClass:"do-btn",on:{"click":function($event){return _vm.manipulateInnerState()}}},[_vm._v("Change state from inside")])])]),_c('ul',_vm._l((_vm.lista),function(item,$index){return _c('li',{key:$index},[_vm._v(" "+_vm._s(item.id)+" - "+_vm._s(item.name)+" "),_c('span',{staticClass:"delete-btn",on:{"click":function($event){return _vm.removeFromList(item.id)}}},[_vm._v("X")])])}),0)],{"exported":{obj: _vm.obj, primitiva: _vm.primitiva, manipulateInnerState: _vm.manipulateInnerState,lista: _vm.lista, removeFromList: _vm.removeFromList}})],2),_c('br')])}
 var staticRenderFns = []
 
@@ -2672,7 +2680,7 @@ var ComponentTest_component = normalizeComponent(
 // CONCATENATED MODULE: ./src/components/ComponentTest/index.js
 
 /* harmony default export */ var components_ComponentTest = (ComponentTest);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"477ae07f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/SimpleComponent/SimpleComponent.vue?vue&type=template&id=3a1d4c3c&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0c43503a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/SimpleComponent/SimpleComponent.vue?vue&type=template&id=3a1d4c3c&
 var SimpleComponentvue_type_template_id_3a1d4c3c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"background-special"},[_c('button',{staticClass:"global-btn",on:{"click":_vm.increment}},[_vm._v(_vm._s(_vm.text))])])}
 var SimpleComponentvue_type_template_id_3a1d4c3c_staticRenderFns = []
 
@@ -2735,7 +2743,71 @@ var SimpleComponent_component = normalizeComponent(
 // CONCATENATED MODULE: ./src/components/SimpleComponent/index.js
 
 /* harmony default export */ var components_SimpleComponent = (SimpleComponent);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0c43503a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ClockComponent/ClockComponent.vue?vue&type=template&id=53dbfac9&
+var ClockComponentvue_type_template_id_53dbfac9_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._v(_vm._s(_vm.display))])}
+var ClockComponentvue_type_template_id_53dbfac9_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/ClockComponent/ClockComponent.vue?vue&type=template&id=53dbfac9&
+
+// EXTERNAL MODULE: external "moment"
+var external_moment_ = __webpack_require__("c32d");
+var external_moment_default = /*#__PURE__*/__webpack_require__.n(external_moment_);
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ClockComponent/ClockComponent.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+
+/* harmony default export */ var ClockComponentvue_type_script_lang_js_ = ({
+  name: 'clock-component',
+  data: function data() {
+    return {
+      time: Date.now()
+    };
+  },
+  computed: {
+    display: function display() {
+      return external_moment_default()(this.time).format("HH:mm:ss");
+    }
+  },
+  created: function created() {
+    var _this = this;
+
+    setInterval(function () {
+      _this.time = Date.now();
+    }, 1000);
+  }
+});
+// CONCATENATED MODULE: ./src/components/ClockComponent/ClockComponent.vue?vue&type=script&lang=js&
+ /* harmony default export */ var ClockComponent_ClockComponentvue_type_script_lang_js_ = (ClockComponentvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/ClockComponent/ClockComponent.vue
+
+
+
+
+
+/* normalize component */
+
+var ClockComponent_component = normalizeComponent(
+  ClockComponent_ClockComponentvue_type_script_lang_js_,
+  ClockComponentvue_type_template_id_53dbfac9_render,
+  ClockComponentvue_type_template_id_53dbfac9_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var ClockComponent = (ClockComponent_component.exports);
+// CONCATENATED MODULE: ./src/components/ClockComponent/index.js
+
+/* harmony default export */ var components_ClockComponent = (ClockComponent);
 // CONCATENATED MODULE: ./src/components/index.js
+
 
 
 /* import ComponentTest from './ComponentTest';
@@ -2752,6 +2824,7 @@ var style = __webpack_require__("260c");
 // si importano tutti i componenti
  // si importano gli stili globali
 
+ // sass loader 11 non funziona con vue 2.6: https://stackoverflow.com/a/66087132
 
 
 var ComponentLibrary = {

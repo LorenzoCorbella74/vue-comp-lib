@@ -3,6 +3,7 @@ import * as components from './components'
 
 // si importano gli stili globali
 import './stiles/global.css'
+// sass loader 11 non funziona con vue 2.6: https://stackoverflow.com/a/66087132
 import './stiles/style.scss'
 
 const ComponentLibrary = {
