@@ -503,6 +503,13 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
 
 /***/ }),
 
+/***/ "260c":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "2d00":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1137,6 +1144,13 @@ var WeakMap = global.WeakMap;
 
 module.exports = typeof WeakMap === 'function' && /native code/.test(inspectSource(WeakMap));
 
+
+/***/ }),
+
+/***/ "7fa5":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -2415,7 +2429,7 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
 var es_function_name = __webpack_require__("b0c0");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"14d19cdc-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ComponentTest/ComponentTest.vue?vue&type=template&id=7278aea8&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"477ae07f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ComponentTest/ComponentTest.vue?vue&type=template&id=7278aea8&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"component"},[_c('header',[_vm._t("header",[_c('h3',[_vm._v("Esempio con stile base")])])],2),_c('main',[_vm._t("default",[_c('div',{staticStyle:{"display":"flex","justify-content":"space-between"}},[_c('span',[_vm._v(_vm._s(_vm.obj.number))]),_c('span',[_vm._v(_vm._s(_vm.primitiva))]),_c('span',[_c('button',{staticClass:"do-btn",on:{"click":function($event){return _vm.manipulateInnerState()}}},[_vm._v("Change state from inside")])])]),_c('ul',_vm._l((_vm.lista),function(item,$index){return _c('li',{key:$index},[_vm._v(" "+_vm._s(item.id)+" - "+_vm._s(item.name)+" "),_c('span',{staticClass:"delete-btn",on:{"click":function($event){return _vm.removeFromList(item.id)}}},[_vm._v("X")])])}),0)],{"exported":{obj: _vm.obj, primitiva: _vm.primitiva, manipulateInnerState: _vm.manipulateInnerState,lista: _vm.lista, removeFromList: _vm.removeFromList}})],2),_c('br')])}
 var staticRenderFns = []
 
@@ -2658,12 +2672,12 @@ var ComponentTest_component = normalizeComponent(
 // CONCATENATED MODULE: ./src/components/ComponentTest/index.js
 
 /* harmony default export */ var components_ComponentTest = (ComponentTest);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"14d19cdc-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/SimpleComponent/SimpleComponent.vue?vue&type=template&id=4721e270&
-var SimpleComponentvue_type_template_id_4721e270_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('button',{on:{"click":_vm.increment}},[_vm._v(_vm._s(_vm.text))])])}
-var SimpleComponentvue_type_template_id_4721e270_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"477ae07f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/SimpleComponent/SimpleComponent.vue?vue&type=template&id=3a1d4c3c&
+var SimpleComponentvue_type_template_id_3a1d4c3c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"background-special"},[_c('button',{staticClass:"global-btn",on:{"click":_vm.increment}},[_vm._v(_vm._s(_vm.text))])])}
+var SimpleComponentvue_type_template_id_3a1d4c3c_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/SimpleComponent/SimpleComponent.vue?vue&type=template&id=4721e270&
+// CONCATENATED MODULE: ./src/components/SimpleComponent/SimpleComponent.vue?vue&type=template&id=3a1d4c3c&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
 var es_array_concat = __webpack_require__("99af");
@@ -2708,8 +2722,8 @@ var es_array_concat = __webpack_require__("99af");
 
 var SimpleComponent_component = normalizeComponent(
   SimpleComponent_SimpleComponentvue_type_script_lang_js_,
-  SimpleComponentvue_type_template_id_4721e270_render,
-  SimpleComponentvue_type_template_id_4721e270_staticRenderFns,
+  SimpleComponentvue_type_template_id_3a1d4c3c_render,
+  SimpleComponentvue_type_template_id_3a1d4c3c_staticRenderFns,
   false,
   null,
   null,
@@ -2727,15 +2741,23 @@ var SimpleComponent_component = normalizeComponent(
 /* import ComponentTest from './ComponentTest';
 import SimpleComponent from './SimpleComponent';
 export default {ComponentTest, SimpleComponent} */
+// EXTERNAL MODULE: ./src/stiles/global.css
+var global = __webpack_require__("7fa5");
+
+// EXTERNAL MODULE: ./src/stiles/style.scss
+var style = __webpack_require__("260c");
+
 // CONCATENATED MODULE: ./src/main.js
 
- // import VueCompositionApi from '@vue/composition-api';
+// si importano tutti i componenti
+ // si importano gli stili globali
+
+
 
 var ComponentLibrary = {
   install: function install(Vue
   /* , options = {} */
   ) {
-    // Vue.use(VueCompositionApi)
     // components
     for (var componentName in components_namespaceObject) {
       var component = components_namespaceObject[componentName];
@@ -2747,10 +2769,12 @@ var ComponentLibrary = {
 
 if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.use(ComponentLibrary);
-} // Funziona ma i componenti sono vuoti come se non leggesse la composition API
-
-/* export { default as ComponentTest } from './components/ComponentTest'
-export { default as SimpleComponent } from './components/SimpleComponent' */
+}
+/* 
+  // Oppure come componenti da importare singolarmente
+  export { default as ComponentTest } from './components/ComponentTest'
+  export { default as SimpleComponent } from './components/SimpleComponent' 
+*/
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 

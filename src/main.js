@@ -1,4 +1,9 @@
+// si importano tutti i componenti
 import * as components from './components'
+
+// si importano gli stili globali
+import './stiles/global.css'
+import './stiles/style.scss'
 
 const ComponentLibrary = {
   install(Vue/* , options = {} */) {

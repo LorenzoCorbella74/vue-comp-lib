@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <button @click="increment">{{ text }}</button>
+  <div class="background-special">
+    <button @click="increment" class="global-btn">{{ text }}</button>
   </div>
 </template>
 <script>
