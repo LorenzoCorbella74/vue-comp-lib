@@ -2,7 +2,7 @@ module.exports = {
     locales: {
       '/': {
         lang: 'en-US',
-        title: 'Light search component library',
+        title: 'Light search component library 📒',
         description: 'Documentation site for the Light search component library'
       }
     },
